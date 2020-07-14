@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CommonViewActivity"
+    android:orientation="vertical">
+
+    <!--텍스트 출력-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=
+            "구글 https://www.google.com
+메일: ggangpae1@gmail.com"
+        android:autoLink="web|phone|email"/>
+
+    <!-- 자바에서 동적으로 이용할 것이라면
+    id를 부여해야 합니다.-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/msg"
+        android:id="@+id/txtmsg"/>
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkbox"
+        android:text="체크가 안된 상태"
+        />
+
+</LinearLayout>
