@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Calculator"
+    android:orientation="vertical">
+    <!-- weight는 비율을 가지고 크기를 결정
+    gravity는 내용물의 맞춤 -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="0"
+        android:textSize="30dp"
+        android:gravity="bottom|right"/>
+
+    <!--하단의 버튼 영역-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <!-- 숫자 영역을 만들어 줄 레이아웃 -->
+        <TableLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3">
+            <TableRow>
+                <Button
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:text="7"
+                    android:paddingTop="27dp"
+                    android:paddingBottom="27dp"
+                    />
+                <Button
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:text="8"
+                    android:paddingTop="27dp"
+                    android:paddingBottom="27dp"
+                    />
+                <Button
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:text="9"
+                    android:paddingTop="27dp"
+                    android:paddingBottom="27dp"
+                    />
+
+            </TableRow>
+            <TableRow>
+                <Button
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:text="4"
+                    android:paddingTop="27dp"
+                    android:paddingBottom="27dp"
+                    />
+                <Button
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:text="5"
+                    android:paddingTop="27dp"
+                    android:paddingBottom="27dp"
+                    />
+                <Button
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:text="6"
+                    android:paddingTop="27dp"
+                    android:paddingBottom="27dp"
+                    />
+
+            </TableRow>
+            <TableRow>
+                <Button
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:text="1"
+                    android:paddingTop="27dp"
+                    android:paddingBottom="27dp"
+                    />
+                <Button
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:text="2"
+                    android:paddingTop="27dp"
+                    android:paddingBottom="27dp"
+                    />
+                <Button
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:text="3"
+                    android:paddingTop="27dp"
+                    android:paddingBottom="27dp"
+                    />
+
+            </TableRow>
+            <TableRow>
+                <Button
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:text="."
+                    android:paddingTop="27dp"
+                    android:paddingBottom="27dp"
+                    />
+                <Button
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:text="0"
+                    android:paddingTop="27dp"
+                    android:paddingBottom="27dp"
+                    />
+                <Button
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:text="-"
+                    android:paddingTop="27dp"
+                    android:paddingBottom="27dp"
+                    />
+
+            </TableRow>
+        </TableLayout>
+
+        <!-- 연산자 버튼을 배치시킬 레이아웃 -->
+        <GridLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <Button
+                android:text="C"
+                android:paddingTop="18dp"
+                android:paddingBottom="18dp"/>
+            <Button
+                android:text="/"
+                android:paddingTop="18dp"
+                android:paddingBottom="18dp"/>
+            <Button
+                android:text="*"
+                android:paddingTop="18dp"
+                android:paddingBottom="18dp"/>
+            <Button
+                android:text="+"
+                android:paddingTop="21dp"
+                android:paddingBottom="21dp"/>
+            <Button
+                android:text="-"
+                android:paddingTop="18dp"
+                android:paddingBottom="18dp"/>
+            <Button
+                android:text="="
+                android:paddingTop="18dp"
+                android:paddingBottom="18dp"/>
+
+
+
+        </GridLayout>
+    </LinearLayout>
+
+</LinearLayout>

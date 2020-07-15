@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RelativeLayoutActivity">
+
+    <!-- 부모 뷰의 오른쪽 끝에 배치 -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="기준"
+        android:textSize="15sp"
+        android:id="@+id/base"
+        android:layout_alignParentRight="true"
+     />
+
+    <!-- base라는 id를 가진 뷰의 왼쪽에 배치 -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="왼쪽"
+        android:textSize="15sp"
+        android:layout_toLeftOf="@+id/base"
+        />
+
+
+</RelativeLayout>
